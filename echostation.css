@@ -1,0 +1,287 @@
+/*トップ画面*/
+
+video {
+  width: 100vw;
+  height: 70vh;
+  margin: 0;
+  /*position: relative;*/
+}
+
+/*トップ画面ビデオ*/
+.video>strong {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 120px;
+  color: yellow;
+  width: 100%;
+  text-align: center;
+}
+
+/*sub title エコーに携わる.. */
+h2 {
+  font-size: 36px;
+  color: white;
+
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+/*項目*/
+.colomn {
+  display: flex;
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid #efefef;
+  background-color: blanchedalmond;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 40px, 0, 40px, 0;
+}
+
+/*.column-item {
+  display: flex;
+  margin: 24px;
+}*/
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+  display: flex;
+  font-size: 32px;
+}
+
+/*学ぶ(したいことをチョイス）*/
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.item {
+  background-color: coral;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  font-size: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 30px;
+}
+
+/*.c-btn{
+  cursor: pointer ;
+  transition:  .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.c-btn {
+  background: #ff701e;
+  border: 2px solid #ff701e;
+  border-radius: 60px;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  max-width: 300px;
+  padding: 15px 40px;
+  text-align: center;
+}
+
+.c-btn.reverse:hover {
+  background: #fff;
+  color: #ff701e;
+}*/
+
+/*ボタン*/
+.c-btn {
+  font-size: 27px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  padding: 10px 30px;
+  background-color: coral;
+  display: block;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px gray;
+  border-radius: 60px;
+}
+
+.c-btn:hover {
+  background-color: chocolate;
+  color: white;
+}
+
+.d-btn {
+  font-size: 27px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  padding: 10px 30px;
+  background-color: burlywood;
+  display: block;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px gray;
+  border-radius: 60px;
+}
+
+.d-btn:hover {
+  background-color: chocolate;
+  color: white;
+}
+
+
+.container_technique {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: bisque;
+}
+
+.container_technique img {
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  /*border-bottom: 1px solid yellowgreen;
+  padding-bottom: 15px;*/
+}
+
+/*探す・求む項目*/
+.search-detail {
+  border-top: 1px solid greenyellow;
+  padding-top: 15px;
+}
+
+/*画像助言*/
+
+
+/*知識*/
+.knowledge-detail {
+  
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+  
+}
+
+.technique-detail {
+  background-color: darkgrey;
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+/*知識ボタン*/
+
+.u-btn {
+  font-size: 27px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  padding: 10px 30px;
+  background-color: coral;
+  display: block;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px gray;
+  border-radius: 60px;
+}
+
+.u-btn:hover {
+  background-color: chocolate;
+  color: white;
+}
+
+.a-btn {
+  font-size: 27px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding: 10px 30px;
+  background-color: coral;
+  display: block;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px gray;
+  border-radius: 60px;
+}
+
+.a-btn:hover {
+  background-color: chocolate;
+  color: white;
+}
+
+.v-btn {
+  font-size: 27px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  padding: 10px 30px;
+  background-color: coral;
+  display: block;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px gray;
+  border-radius: 60px;
+}
+
+.v-btn:hover {
+  background-color: chocolate;
+  color: white;
+}
+
+.m-btn {
+  font-size: 27px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  padding: 10px 30px;
+  background-color: coral;
+  display: block;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px gray;
+  border-radius: 60px;
+}
+
+.m-btn:hover {
+  background-color: chocolate;
+  color: white;
+}
+
+.o-btn {
+  font-size: 27px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  padding: 10px 30px;
+  background-color: coral;
+  display: block;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px gray;
+  border-radius: 60px;
+}
+
+.o-btn:hover {
+  background-color: chocolate;
+  color: white;
+}

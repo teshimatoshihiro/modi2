@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/diag.css">
+  <title>腫瘍画像診断アプリ</title>
+</head>
+
+<body>
+  <img src="img/画像1.png" alt="liver tumor">
+
+  <h1></h1>
+  <ul></ul>
+  <div class="point">腫瘤の悪性度は:<span></span>ポイント</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+
+
+    $(function () {
+
+      let count = 0;
+      const list = [
+        {
+          'title': 'ウイルス感染の有無?',
+          'anser': [
+            'なし',
+            '不明',
+            'あり'
+          ]
+        },
+        {
+          'title': '腫瘤形状?',
+          'anser': [
+            '整',
+            'やや不整',
+            '不整'
+          ]
+        },
+        {
+          'title': '腫瘤辺縁低エコー帯?',
+          'anser': [
+            'なし',
+            'わずかにあり',
+            'あり'
+          ]
+        },
+        {
+          'title': '腫瘤内血流?',
+          'anser': [
+            'なし',
+            'わずかにあり',
+            'あり'
+          ]
+        }
+
+      ];
+
+      function render(count) {
+        $('li').remove();
+        $('h1').text(list[count]['title']);
+        list[count]['anser'].forEach(function (text) {
+          const li = `<li>${text}</li>`;
+          $('ul').append(li);
+        });
+      }
+      render(0);
+
+      function pointGet(li_index) {
+
+        switch (li_index) {
+          case 0:
+            return 1;
+            break;
+
+          case 1:
+            return 0;
+            break;
+
+          case 2:
+            return -1;
+            break;
+
+        }
+      }
+      let point;
+      $('body').on('click', 'li', function () {
+        const li_index = $('li').index(this);
+        console.log(pointGet(li_index));
+        point += pointGet(li_index);
+        if (count < list.length - 1) {
+          count++;
+          render(count);
+        } else {
+          console.log('end!!');
+
+        }
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
