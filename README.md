@@ -2,7 +2,7 @@
 
 ## DEMO
 
- https://github.com/teshimatoshihiro/modi2.git
+
 
 ## 紹介と使い方
 
